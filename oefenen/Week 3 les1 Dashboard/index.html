@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mijn Eerste Dashboard</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body id="js--body">
+    <article class="card card--slider">
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="4" step="1">
+    </article>
+    <article class="card"></article>
+    <article class="card card--stopwatch">
+        <div class="timer" id="">
+            <span class="minutes" id="js--minutes">0</span>
+            :
+            <span class="seconds" id="js--seconds">00</span>
+            ,
+            <span class="miliseconds" id="js--miliseconds">00</span>
+        </div>
+        <section class="buttonWraper">
+            <button  class="button button--start" id="js--start">Start</button>
+            <button class="button button--stop"  id="js--stop">Stop</button>
+            <button class="button button--reset"  id="js--reset">Reset</button>
+        </section>
+      
+    </article>
+
+</body>
+</html>
