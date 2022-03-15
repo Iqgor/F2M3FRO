@@ -85,3 +85,15 @@ slider.oninput = function(){
    
 }
 
+let gegevens ={
+    "text" : "De Paashaas met de Chocolade Eieren",
+    "img": "img/paashaas-met-mandje.png",
+
+}
+
+const text = document.getElementById("js--text")
+const img = document.getElementById("js--img")
+
+
+text.innerText = gegevens.text
+img.src = gegevens.img
