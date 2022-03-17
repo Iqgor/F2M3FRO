@@ -45,7 +45,7 @@ start.onclick = function(){
 
         milisecondenTimer.innerText = miliseconden /* Dit laat ie zin in de HTML */
         
-    }, 1/*Dit is in miliseconden dus 1000ms = 1sec*/ ); 
+    }, 10/*Dit is in miliseconden dus 1000ms = 1sec*/ ); 
   
 }
 
@@ -85,15 +85,32 @@ slider.oninput = function(){
    
 }
 
-let gegevens ={
-    "text" : "De Paashaas met de Chocolade Eieren",
-    "img": "img/paashaas-met-mandje.png",
 
-}
 
+/* hier begint de text met javascript toevoegen*/
+
+const paragraaf = document.getElementById("js--text")
+const img = document.getElementById("js--img")
+
+let gegevens = fetch("/oefenen/dashboard/data.json").then(
+    function(binnenGekomenGegevens){
+        return binnenGekomenGegevens.json();
+    }).then(
+        function(echteGegevens){
+            paragraaf.innerHTML = echteGegevens.text
+            img.src = echteGegevens.img
+
+        }
+        
+    );
+
+
+
+
+/*
 const text = document.getElementById("js--text")
 const img = document.getElementById("js--img")
 
 
 text.innerText = gegevens.text
-img.src = gegevens.img
+img.src = gegevens.img*/
