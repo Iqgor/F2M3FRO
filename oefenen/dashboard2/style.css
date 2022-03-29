@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+
+.cards{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border:5px solid black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.button{
+    font-size: 90%;
+    border: none;
+    background-color: gray;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    
+}
+
+.button:hover{
+    cursor: pointer;
+    background: rgb(194, 191, 191);
+}

@@ -1,0 +1,12 @@
+Stappenplan Api in Javascript.
+
+1. Zoek de benodigde API op.
+2. In de Api vind je links naar data voor je benodigde bestanden.
+3. Maak je bestanden voor je project.
+4. Maak een variablen met een Fetch.
+5. Met de link die je hebt gekopieerd zet je in je variablen. 
+6. als de Api opgehaald kan je je basis functie loggen. 
+7. je moet de data van de Api vertalen naar Javascript.
+8. Als je dat heb gedaan moet je de echte data binnen krijgen met een ".then".
+9. In de "then" zet je weer een nieuwe function met een zelfverzonnen variablen. 
+10. Die variablen is nu de data die je heb opgehaald in de "Fetch".   
