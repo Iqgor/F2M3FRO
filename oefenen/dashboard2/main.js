@@ -39,6 +39,32 @@ let show = fetch("https://api.tvmaze.com/search/shows?q=phineas%20and%20ferb")
 })
 .then(function(realData){
     title.innerText = realData[0].show.name
-    be.innerHTML = realData[1].show.summary	
+    be.innerHTML = realData[0   ].show.summary	
 })
+
+const input = document.getElementById("js--input")
+const h2 = document.getElementById('h2-1')
+const age = document.getElementById("js--age")
+
+input.onkeyup = function (event) {
+    if (event.keyCode === 13) {
+        let naam = input.value
+        let agify = fetch("https://api.agify.io/?name=" + naam + "&country_id=NL")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (echteData) {
+                age.innerText = echteData.age
+            })
+        age.style.visibility = 'visible'
+        age.style.fontSize = "4rem"
+        h2.style.visibility = 'hidden'
+        input.style.visibility = 'hidden'
+    }
+
+    
+}
+
+
+   
 
