@@ -39,7 +39,7 @@ let show = fetch("https://api.tvmaze.com/search/shows?q=phineas%20and%20ferb")
 })
 .then(function(realData){
     title.innerText = realData[0].show.name
-    be.innerHTML = realData[0   ].show.summary	
+    be.innerHTML = realData[0].show.summary	
 })
 
 const input = document.getElementById("js--input")
