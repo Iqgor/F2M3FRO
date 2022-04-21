@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #eee;
+    --shadow: 0 2rem 2rem 0  rgba(0,0,0,0.2);
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "info info contenten contenten contenten"
+    ". . contenten contenten contenten"
+    "footer footer footer footer footer";
+    gap: 2rem;
+    background: var(--background);
+    
+}
+
+.header{
+    grid-area: header;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
+
+.content{
+    grid-area: contenten;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
+
+.information{
+    grid-area: info;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
+
+.footer{
+    grid-area: footer;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
